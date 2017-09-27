@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GlassesRightLabelHud" customModule="DroneVR" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="40W-bX-0at" id="LpJ-2P-nua"/>
+                <outlet property="textLabel" destination="S87-gH-yIc" id="FLa-6D-3A2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="lVt-1B-jQ2">
+            <rect key="frame" x="0.0" y="0.0" width="205" height="24"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="40W-bX-0at">
+                    <rect key="frame" x="192" y="6" width="13" height="13"/>
+                    <color key="tintColor" red="0.25807464689999998" green="0.52156865600000002" blue="0.1223461076" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="DUb-c8-jkC"/>
+                        <constraint firstAttribute="width" constant="13" id="G6F-SJ-rGT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S87-gH-yIc">
+                    <rect key="frame" x="141" y="2" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.25807464689999998" green="0.52156865600000002" blue="0.1223461076" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="40W-bX-0at" firstAttribute="centerY" secondItem="lVt-1B-jQ2" secondAttribute="centerY" id="0ZE-oo-Vj2"/>
+                <constraint firstAttribute="trailing" secondItem="40W-bX-0at" secondAttribute="trailing" id="Lfe-e7-WXE"/>
+                <constraint firstAttribute="trailing" secondItem="S87-gH-yIc" secondAttribute="trailing" constant="22" id="tSV-FC-f77"/>
+                <constraint firstItem="S87-gH-yIc" firstAttribute="centerY" secondItem="lVt-1B-jQ2" secondAttribute="centerY" id="yGe-3j-2Sa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="376.5" y="346"/>
+        </view>
+    </objects>
+</document>

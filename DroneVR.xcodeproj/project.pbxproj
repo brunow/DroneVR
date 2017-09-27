@@ -1,0 +1,1991 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E706C4EC1D8C046E0022CFAA /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E706C4EB1D8C046E0022CFAA /* ExternalAccessory.framework */; };
+		E70928561D30C9A200C3A287 /* ViewStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70928551D30C9A200C3A287 /* ViewStateMachine.swift */; };
+		E70928581D30EED200C3A287 /* MenuIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70928571D30EED200C3A287 /* MenuIconButton.swift */; };
+		E709285A1D30EEDC00C3A287 /* MenuSimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70928591D30EEDC00C3A287 /* MenuSimpleButton.swift */; };
+		E71BA52B1DA53F4B003EBA7D /* FormatterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E71BA52A1DA53F4B003EBA7D /* FormatterKit.framework */; };
+		E71BA5301DA56B08003EBA7D /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BA52F1DA56B08003EBA7D /* DismissSegue.swift */; };
+		E71BA5331DA57458003EBA7D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BA5321DA57458003EBA7D /* MapView.swift */; };
+		E71BA5351DA57E2F003EBA7D /* MapItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71BA5341DA57E2F003EBA7D /* MapItemView.swift */; };
+		E721A8DA1D087FB700976C29 /* FlyingCameraHorizont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E721A8D91D087FB700976C29 /* FlyingCameraHorizont.swift */; };
+		E73357F01D8D7C600033CB71 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73357EF1D8D7C600033CB71 /* AudioToolbox.framework */; };
+		E73A15591CECC594003C8BC3 /* SwiftyUserDefaults.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73A15571CECC594003C8BC3 /* SwiftyUserDefaults.framework */; };
+		E73A155A1CECC594003C8BC3 /* TextAttributes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E73A15581CECC594003C8BC3 /* TextAttributes.framework */; };
+		E73A155E1CECC8D8003C8BC3 /* DroneMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73A155D1CECC8D8003C8BC3 /* DroneMetrics.swift */; };
+		E74B51B61DA0EC0800F33F3C /* PaMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E74B51B51DA0EC0800F33F3C /* PaMediaModel.m */; };
+		E74E77771D19D843003606C9 /* RecordingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77761D19D843003606C9 /* RecordingButton.swift */; };
+		E74E77791D19DFA8003606C9 /* TakeOffButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77781D19DFA8003606C9 /* TakeOffButton.swift */; };
+		E74E777B1D19E06C003606C9 /* LineBatteryLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E777A1D19E06C003606C9 /* LineBatteryLevelView.swift */; };
+		E74E777D1D19E480003606C9 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E777C1D19E480003606C9 /* NotificationView.swift */; };
+		E74E777F1D19E51F003606C9 /* HudRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E777E1D19E51F003606C9 /* HudRoundedButton.swift */; };
+		E74E77831D1A7969003606C9 /* Applications.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77821D1A7969003606C9 /* Applications.swift */; };
+		E74E77851D1A798F003606C9 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77841D1A798F003606C9 /* Fonts.swift */; };
+		E74E77871D1AC06C003606C9 /* FlyingMetricsChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77861D1AC06C003606C9 /* FlyingMetricsChangeView.swift */; };
+		E74E778A1D1AD9FC003606C9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E77891D1AD9FC003606C9 /* MenuView.swift */; };
+		E74E778C1D1ADA10003606C9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E778B1D1ADA10003606C9 /* MenuViewController.swift */; };
+		E74E778E1D1ADDFE003606C9 /* MenuPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74E778D1D1ADDFE003606C9 /* MenuPresentable.swift */; };
+		E75253C71F7BABF6002AFC70 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75253C31F7BABF6002AFC70 /* UIColor.swift */; };
+		E75253C81F7BABF6002AFC70 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75253C41F7BABF6002AFC70 /* UIImage.swift */; };
+		E75253C91F7BABF6002AFC70 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75253C51F7BABF6002AFC70 /* UIView.swift */; };
+		E75253CA1F7BABF6002AFC70 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75253C61F7BABF6002AFC70 /* UIViewController.swift */; };
+		E756A1AE1D7730FB0075D91B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1AD1D7730FA0075D91B /* SettingsView.swift */; };
+		E756A1B01D77313E0075D91B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1AF1D77313E0075D91B /* SettingsViewController.swift */; };
+		E756A1B31D77EB700075D91B /* RecoveryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1B21D77EB700075D91B /* RecoveryViewModel.swift */; };
+		E756A1B51D77F7620075D91B /* SettingsBoolean.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1B41D77F7620075D91B /* SettingsBoolean.swift */; };
+		E756A1BB1D77F99D0075D91B /* UINib+DroneVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1BA1D77F99D0075D91B /* UINib+DroneVR.swift */; };
+		E756A1C61D780F730075D91B /* Driver+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1BF1D780F730075D91B /* Driver+Occupiable.swift */; };
+		E756A1C71D780F730075D91B /* Driver+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C01D780F730075D91B /* Driver+Optional.swift */; };
+		E756A1C81D780F730075D91B /* Observable+Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C11D780F730075D91B /* Observable+Occupiable.swift */; };
+		E756A1C91D780F730075D91B /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C21D780F730075D91B /* Observable+Optional.swift */; };
+		E756A1CA1D780F730075D91B /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C31D780F730075D91B /* Occupiable.swift */; };
+		E756A1CB1D780F730075D91B /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C41D780F730075D91B /* OptionalType.swift */; };
+		E756A1CC1D780F730075D91B /* RxOptionalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1C51D780F730075D91B /* RxOptionalError.swift */; };
+		E756A1D01D7827CB0075D91B /* HudScaleAnimatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1CF1D7827CB0075D91B /* HudScaleAnimatable.swift */; };
+		E756A1D21D7835850075D91B /* GlassesInformationsHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1D11D7835850075D91B /* GlassesInformationsHud.swift */; };
+		E756A1D61D783A3B0075D91B /* GlassesInformationsHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = E756A1D51D783A3B0075D91B /* GlassesInformationsHud.xib */; };
+		E756A1D81D783A7D0075D91B /* GlassesLabelHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1D71D783A7D0075D91B /* GlassesLabelHud.swift */; };
+		E756A1DA1D783A8E0075D91B /* GlassesLabelHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = E756A1D91D783A8E0075D91B /* GlassesLabelHud.xib */; };
+		E756A1DC1D79684C0075D91B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E756A1DB1D79684C0075D91B /* MainStoryboard.storyboard */; };
+		E756A1DE1D7969AD0075D91B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1DD1D7969AD0075D91B /* MapViewController.swift */; };
+		E756A1E01D796B1A0075D91B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E756A1DF1D796B1A0075D91B /* MapKit.framework */; };
+		E756A1E41D8158AC0075D91B /* Flyingable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E756A1E31D8158AC0075D91B /* Flyingable.swift */; };
+		E75D29E61CFF366E00FF15F0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E75D29E01CFF366E00FF15F0 /* Localizable.strings */; };
+		E75D29EB1CFF372C00FF15F0 /* Colors.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D29E81CFF372C00FF15F0 /* Colors.generated.swift */; };
+		E75D29EC1CFF372C00FF15F0 /* Images.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D29E91CFF372C00FF15F0 /* Images.generated.swift */; };
+		E75D29ED1CFF372C00FF15F0 /* Strings.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D29EA1CFF372C00FF15F0 /* Strings.generated.swift */; };
+		E75D29EF1CFF3B9B00FF15F0 /* FlyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D29EE1CFF3B9B00FF15F0 /* FlyButton.swift */; };
+		E75D29F11CFF3ED900FF15F0 /* ConnectedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75D29F01CFF3ED900FF15F0 /* ConnectedStateView.swift */; };
+		E764813F1CB8253F00A9A611 /* FlyingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764813E1CB8253F00A9A611 /* FlyingView.swift */; };
+		E76481411CB8254900A9A611 /* FlyingNormalHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76481401CB8254900A9A611 /* FlyingNormalHud.swift */; };
+		E76481431CB8255600A9A611 /* FlyingViewGlassesHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76481421CB8255600A9A611 /* FlyingViewGlassesHud.swift */; };
+		E764814B1CB8CE6500A9A611 /* FlyingBatteryLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764814A1CB8CE6500A9A611 /* FlyingBatteryLevelView.swift */; };
+		E764814F1CB8EE3900A9A611 /* VirtualRealityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764814E1CB8EE3900A9A611 /* VirtualRealityViewModel.swift */; };
+		E76481571CB8FFB600A9A611 /* JoystickView.m in Sources */ = {isa = PBXBuildFile; fileRef = E76481521CB8FFB600A9A611 /* JoystickView.m */; };
+		E764815C1CB92ABB00A9A611 /* PABebopVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E764815B1CB92ABB00A9A611 /* PABebopVideoView.m */; };
+		E764815E1CBAFDC800A9A611 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E764815D1CBAFDC800A9A611 /* CoreMotion.framework */; };
+		E76CB5B11CE6F221008D0A5C /* PACommonDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = E76CB5B01CE6F221008D0A5C /* PACommonDriver.m */; };
+		E76CB5B31CE6F384008D0A5C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76CB5B21CE6F384008D0A5C /* AlertView.swift */; };
+		E76DD88D1DA3BFBC00503407 /* ManualSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76DD88C1DA3BFBC00503407 /* ManualSettingsViewController.swift */; };
+		E7707C441CF600E400257A3C /* Double+DroneVR.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7707C431CF600E400257A3C /* Double+DroneVR.swift */; };
+		E7785C791D3038E4005CA32A /* NotificationPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7785C781D3038E4005CA32A /* NotificationPresentable.swift */; };
+		E77ECF0F1CF86EE6003A8C7D /* CocoaLumberjack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77ECF0A1CF86EE6003A8C7D /* CocoaLumberjack.framework */; };
+		E77ECF101CF86EE6003A8C7D /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77ECF0B1CF86EE6003A8C7D /* CocoaLumberjackSwift.framework */; };
+		E77ECF121CF86EE6003A8C7D /* RxAdditions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E77ECF0D1CF86EE6003A8C7D /* RxAdditions.framework */; };
+		E77ECF571CFC5FFB003A8C7D /* FlyingConfigable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF551CFC5FFB003A8C7D /* FlyingConfigable.swift */; };
+		E77ECF581CFC5FFB003A8C7D /* FlyingGamepadAble.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF561CFC5FFB003A8C7D /* FlyingGamepadAble.swift */; };
+		E77ECF5A1CFC620D003A8C7D /* VideoPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF591CFC620D003A8C7D /* VideoPresentable.swift */; };
+		E77ECF601CFC66A3003A8C7D /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF5F1CFC66A3003A8C7D /* Disposable.swift */; };
+		E77ECF621CFC6908003A8C7D /* Dronable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF611CFC6908003A8C7D /* Dronable.swift */; };
+		E77ECF641CFC7609003A8C7D /* VirtualJoystickMovable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF631CFC7609003A8C7D /* VirtualJoystickMovable.swift */; };
+		E77ECF661CFC7AA3003A8C7D /* FlyingInformationsPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF651CFC7AA3003A8C7D /* FlyingInformationsPresentable.swift */; };
+		E77ECF681CFC7EC3003A8C7D /* FlyingConfigPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF671CFC7EC3003A8C7D /* FlyingConfigPresentable.swift */; };
+		E77ECF6A1CFC836A003A8C7D /* ConnectionPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77ECF691CFC836A003A8C7D /* ConnectionPresentable.swift */; };
+		E77F250C1CE5C417006DA6CC /* PADroneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F250B1CE5C417006DA6CC /* PADroneViewModel.swift */; };
+		E78F07551D94EC2D00F48C8B /* Storyboards.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E78F07541D94EC2D00F48C8B /* Storyboards.generated.swift */; };
+		E79A0E671D0F017F003EFB3C /* AlertPresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79A0E661D0F017F003EFB3C /* AlertPresentable.swift */; };
+		E79FD25E1CC53BB70068138F /* EasyPeasy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79FD25C1CC53BB70068138F /* EasyPeasy.framework */; };
+		E7A2C1DC1CD2550E00FBA00C /* DroneVRTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2C1DB1CD2550E00FBA00C /* DroneVRTests.swift */; };
+		E7A2C1EE1CD2551400FBA00C /* DroneVRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2C1ED1CD2551400FBA00C /* DroneVRUITests.swift */; };
+		E7AB05EE1CE5ADB8004A3C88 /* PABeebopDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AB05ED1CE5ADB8004A3C88 /* PABeebopDriver.m */; };
+		E7AB05F11CE5ADC5004A3C88 /* PAMiniDroneDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = E7AB05F01CE5ADC5004A3C88 /* PAMiniDroneDriver.m */; };
+		E7AB25F41D008FCC00255EB0 /* Fonts.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB25F31D008FCC00255EB0 /* Fonts.generated.swift */; };
+		E7AB25F81D009D2600255EB0 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = E7AB25F61D009D2600255EB0 /* .gitkeep */; };
+		E7AB25F91D009D2600255EB0 /* AnimationSugar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB25F71D009D2600255EB0 /* AnimationSugar.swift */; };
+		E7AD6FAF1D33F9200091CA83 /* GCDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7AD6FAE1D33F9200091CA83 /* GCDKit.framework */; };
+		E7B973DB1D76BBAC00BEEFA6 /* MenuIconButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7B973DA1D76BBAC00BEEFA6 /* MenuIconButton.xib */; };
+		E7B973DD1D76EEB500BEEFA6 /* PADroneViewModel+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B973DC1D76EEB500BEEFA6 /* PADroneViewModel+Location.swift */; };
+		E7B973E01D76EEFE00BEEFA6 /* PADroneViewModel+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B973DF1D76EEFE00BEEFA6 /* PADroneViewModel+Driver.swift */; };
+		E7BC21C81DA40D5800B2B3E8 /* ManualSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BC21C71DA40D5800B2B3E8 /* ManualSettingsView.swift */; };
+		E7C612CD1CC2194E00B130F2 /* DroneConfigViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C612CC1CC2194E00B130F2 /* DroneConfigViewModel.swift */; };
+		E7C975EC1D1FC8150006E00B /* ViewControllerTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C975EB1D1FC8150006E00B /* ViewControllerTransition.swift */; };
+		E7C975EF1D1FC90F0006E00B /* MenuVCTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C975EE1D1FC90F0006E00B /* MenuVCTransitions.swift */; };
+		E7CB52C81D942FF100B40553 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CB52C71D942FF100B40553 /* Button.swift */; };
+		E7D155561D2E91E70003A733 /* SF-UI-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D1554D1D2E91E70003A733 /* SF-UI-Display-Black.otf */; };
+		E7D155571D2E91E70003A733 /* SF-UI-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D1554E1D2E91E70003A733 /* SF-UI-Display-Bold.otf */; };
+		E7D155581D2E91E70003A733 /* SF-UI-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D1554F1D2E91E70003A733 /* SF-UI-Display-Heavy.otf */; };
+		E7D155591D2E91E70003A733 /* SF-UI-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155501D2E91E70003A733 /* SF-UI-Display-Light.otf */; };
+		E7D1555A1D2E91E70003A733 /* SF-UI-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155511D2E91E70003A733 /* SF-UI-Display-Medium.otf */; };
+		E7D1555B1D2E91E70003A733 /* SF-UI-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155521D2E91E70003A733 /* SF-UI-Display-Regular.otf */; };
+		E7D1555C1D2E91E70003A733 /* SF-UI-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155531D2E91E70003A733 /* SF-UI-Display-Semibold.otf */; };
+		E7D1555D1D2E91E70003A733 /* SF-UI-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155541D2E91E70003A733 /* SF-UI-Display-Thin.otf */; };
+		E7D1555E1D2E91E70003A733 /* SF-UI-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = E7D155551D2E91E70003A733 /* SF-UI-Display-Ultralight.otf */; };
+		E7D2FBA01CBBFC9300785259 /* ManualViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D2FB9F1CBBFC9300785259 /* ManualViewModel.swift */; };
+		E7D711401DABFA70008F0A29 /* PADroneViewModel+Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7113F1DABFA70008F0A29 /* PADroneViewModel+Enums.swift */; };
+		E7D711421DAC25F3008F0A29 /* SettingsSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D711411DAC25F3008F0A29 /* SettingsSegmentedControl.swift */; };
+		E7D97E801D9B93E2002CD3D3 /* GlassesRightLabelHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D97E7F1D9B93E2002CD3D3 /* GlassesRightLabelHud.swift */; };
+		E7D97E821D9B93ED002CD3D3 /* GlassesRightLabelHud.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D97E811D9B93ED002CD3D3 /* GlassesRightLabelHud.xib */; };
+		E7E54FD81D18440D00A9016D /* FlyingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7E54FD71D18440D00A9016D /* FlyingConfiguration.swift */; };
+		E7E5A7661D0726AE00E42382 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E5A7641D0726AE00E42382 /* Fabric.framework */; };
+		E7E5A7671D0726AE00E42382 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E5A7651D0726AE00E42382 /* Crashlytics.framework */; };
+		E7E803C51CCFD4F7005C15A5 /* PADummyDriver.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E803C41CCFD4F7005C15A5 /* PADummyDriver.m */; };
+		E7EBB60D1CE7173A00BC99A0 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB60C1CE7173A00BC99A0 /* FXBlurView.m */; };
+		E7EBB60F1CE7723500BC99A0 /* FlyingMetricsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EBB60E1CE7723500BC99A0 /* FlyingMetricsView.swift */; };
+		E7F91B441CBCFF4200F062CA /* GamePadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F91B431CBCFF4200F062CA /* GamePadViewModel.swift */; };
+		E7FE9CCA1CB68E4000DE5FEA /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CB61CB68E4000DE5FEA /* AppConstants.m */; };
+		E7FE9CCC1CB68E4000DE5FEA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CBA1CB68E4000DE5FEA /* NavigationController.swift */; };
+		E7FE9CCF1CB68E4000DE5FEA /* PADroneDiscoverer.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CC31CB68E4000DE5FEA /* PADroneDiscoverer.m */; };
+		E7FE9CD61CB6915F00DE5FEA /* ManualLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FE9CD21CB6915F00DE5FEA /* ManualLayout.framework */; };
+		E7FE9CD71CB6915F00DE5FEA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FE9CD31CB6915F00DE5FEA /* RxCocoa.framework */; };
+		E7FE9CD81CB6915F00DE5FEA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FE9CD41CB6915F00DE5FEA /* RxSwift.framework */; };
+		E7FE9CDC1CB6921E00DE5FEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CDB1CB6921E00DE5FEA /* AppDelegate.m */; };
+		E7FE9CE31CB6A7A700DE5FEA /* PASDCardModule.m in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CE21CB6A7A700DE5FEA /* PASDCardModule.m */; };
+		E7FE9CE71CB6A88D00DE5FEA /* DroneDiscoveringViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CE61CB6A88D00DE5FEA /* DroneDiscoveringViewModel.swift */; };
+		E7FE9CE91CB6A8C600DE5FEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CE81CB6A8C600DE5FEA /* MainViewController.swift */; };
+		E7FE9CEB1CB6A8D900DE5FEA /* ManualViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CEA1CB6A8D900DE5FEA /* ManualViewController.swift */; };
+		E7FE9CF11CB6B5C500DE5FEA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7FE9CF01CB6B5C500DE5FEA /* MainView.swift */; };
+		F8B03D881C7DA4E900149B4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B03D871C7DA4E900149B4F /* main.m */; };
+		F8B03D931C7DA4E900149B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B03D921C7DA4E900149B4F /* Assets.xcassets */; };
+		F8B03D961C7DA4E900149B4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8B03D941C7DA4E900149B4F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7A2C1DE1CD2550E00FBA00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B03D7B1C7DA4E900149B4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8B03D821C7DA4E900149B4F;
+			remoteInfo = DroneVR;
+		};
+		E7A2C1F01CD2551400FBA00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8B03D7B1C7DA4E900149B4F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8B03D821C7DA4E900149B4F;
+			remoteInfo = DroneVR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E706C4EB1D8C046E0022CFAA /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		E70928551D30C9A200C3A287 /* ViewStateMachine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewStateMachine.swift; sourceTree = "<group>"; };
+		E70928571D30EED200C3A287 /* MenuIconButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuIconButton.swift; sourceTree = "<group>"; };
+		E70928591D30EEDC00C3A287 /* MenuSimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuSimpleButton.swift; sourceTree = "<group>"; };
+		E71BA52A1DA53F4B003EBA7D /* FormatterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FormatterKit.framework; path = Carthage/Build/iOS/FormatterKit.framework; sourceTree = "<group>"; };
+		E71BA52F1DA56B08003EBA7D /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		E71BA5321DA57458003EBA7D /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E71BA5341DA57E2F003EBA7D /* MapItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapItemView.swift; sourceTree = "<group>"; };
+		E721A8D91D087FB700976C29 /* FlyingCameraHorizont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingCameraHorizont.swift; sourceTree = "<group>"; };
+		E73357EF1D8D7C600033CB71 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E73A15571CECC594003C8BC3 /* SwiftyUserDefaults.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyUserDefaults.framework; path = Carthage/Build/iOS/SwiftyUserDefaults.framework; sourceTree = "<group>"; };
+		E73A15581CECC594003C8BC3 /* TextAttributes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TextAttributes.framework; path = Carthage/Build/iOS/TextAttributes.framework; sourceTree = "<group>"; };
+		E73A155D1CECC8D8003C8BC3 /* DroneMetrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneMetrics.swift; sourceTree = "<group>"; };
+		E74B51B41DA0EC0800F33F3C /* PaMediaModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaMediaModel.h; sourceTree = "<group>"; };
+		E74B51B51DA0EC0800F33F3C /* PaMediaModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaMediaModel.m; sourceTree = "<group>"; };
+		E74E77761D19D843003606C9 /* RecordingButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordingButton.swift; sourceTree = "<group>"; };
+		E74E77781D19DFA8003606C9 /* TakeOffButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeOffButton.swift; sourceTree = "<group>"; };
+		E74E777A1D19E06C003606C9 /* LineBatteryLevelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineBatteryLevelView.swift; sourceTree = "<group>"; };
+		E74E777C1D19E480003606C9 /* NotificationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		E74E777E1D19E51F003606C9 /* HudRoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudRoundedButton.swift; sourceTree = "<group>"; };
+		E74E77821D1A7969003606C9 /* Applications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Applications.swift; sourceTree = "<group>"; };
+		E74E77841D1A798F003606C9 /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		E74E77861D1AC06C003606C9 /* FlyingMetricsChangeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingMetricsChangeView.swift; sourceTree = "<group>"; };
+		E74E77891D1AD9FC003606C9 /* MenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		E74E778B1D1ADA10003606C9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		E74E778D1D1ADDFE003606C9 /* MenuPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPresentable.swift; sourceTree = "<group>"; };
+		E75253C31F7BABF6002AFC70 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		E75253C41F7BABF6002AFC70 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		E75253C51F7BABF6002AFC70 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		E75253C61F7BABF6002AFC70 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E756A1AD1D7730FA0075D91B /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E756A1AF1D77313E0075D91B /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		E756A1B21D77EB700075D91B /* RecoveryViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecoveryViewModel.swift; sourceTree = "<group>"; };
+		E756A1B41D77F7620075D91B /* SettingsBoolean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsBoolean.swift; sourceTree = "<group>"; };
+		E756A1BA1D77F99D0075D91B /* UINib+DroneVR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINib+DroneVR.swift"; sourceTree = "<group>"; };
+		E756A1BF1D780F730075D91B /* Driver+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Occupiable.swift"; sourceTree = "<group>"; };
+		E756A1C01D780F730075D91B /* Driver+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Driver+Optional.swift"; sourceTree = "<group>"; };
+		E756A1C11D780F730075D91B /* Observable+Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Occupiable.swift"; sourceTree = "<group>"; };
+		E756A1C21D780F730075D91B /* Observable+Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Observable+Optional.swift"; sourceTree = "<group>"; };
+		E756A1C31D780F730075D91B /* Occupiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Occupiable.swift; sourceTree = "<group>"; };
+		E756A1C41D780F730075D91B /* OptionalType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionalType.swift; sourceTree = "<group>"; };
+		E756A1C51D780F730075D91B /* RxOptionalError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxOptionalError.swift; sourceTree = "<group>"; };
+		E756A1CF1D7827CB0075D91B /* HudScaleAnimatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudScaleAnimatable.swift; sourceTree = "<group>"; };
+		E756A1D11D7835850075D91B /* GlassesInformationsHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesInformationsHud.swift; sourceTree = "<group>"; };
+		E756A1D51D783A3B0075D91B /* GlassesInformationsHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlassesInformationsHud.xib; sourceTree = "<group>"; };
+		E756A1D71D783A7D0075D91B /* GlassesLabelHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesLabelHud.swift; sourceTree = "<group>"; };
+		E756A1D91D783A8E0075D91B /* GlassesLabelHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlassesLabelHud.xib; sourceTree = "<group>"; };
+		E756A1DB1D79684C0075D91B /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E756A1DD1D7969AD0075D91B /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		E756A1DF1D796B1A0075D91B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E756A1E31D8158AC0075D91B /* Flyingable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flyingable.swift; sourceTree = "<group>"; };
+		E75D29E11CFF366E00FF15F0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E75D29E81CFF372C00FF15F0 /* Colors.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.generated.swift; sourceTree = "<group>"; };
+		E75D29E91CFF372C00FF15F0 /* Images.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.generated.swift; sourceTree = "<group>"; };
+		E75D29EA1CFF372C00FF15F0 /* Strings.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.generated.swift; sourceTree = "<group>"; };
+		E75D29EE1CFF3B9B00FF15F0 /* FlyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyButton.swift; sourceTree = "<group>"; };
+		E75D29F01CFF3ED900FF15F0 /* ConnectedStateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectedStateView.swift; sourceTree = "<group>"; };
+		E764813E1CB8253F00A9A611 /* FlyingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingView.swift; sourceTree = "<group>"; };
+		E76481401CB8254900A9A611 /* FlyingNormalHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingNormalHud.swift; sourceTree = "<group>"; };
+		E76481421CB8255600A9A611 /* FlyingViewGlassesHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingViewGlassesHud.swift; sourceTree = "<group>"; };
+		E764814A1CB8CE6500A9A611 /* FlyingBatteryLevelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingBatteryLevelView.swift; sourceTree = "<group>"; };
+		E764814E1CB8EE3900A9A611 /* VirtualRealityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualRealityViewModel.swift; sourceTree = "<group>"; };
+		E76481511CB8FFB600A9A611 /* JoystickView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickView.h; sourceTree = "<group>"; };
+		E76481521CB8FFB600A9A611 /* JoystickView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoystickView.m; sourceTree = "<group>"; };
+		E764815A1CB92ABB00A9A611 /* PABebopVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABebopVideoView.h; sourceTree = "<group>"; };
+		E764815B1CB92ABB00A9A611 /* PABebopVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABebopVideoView.m; sourceTree = "<group>"; };
+		E764815D1CBAFDC800A9A611 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E76CB5AF1CE6F221008D0A5C /* PACommonDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PACommonDriver.h; sourceTree = "<group>"; };
+		E76CB5B01CE6F221008D0A5C /* PACommonDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PACommonDriver.m; sourceTree = "<group>"; };
+		E76CB5B21CE6F384008D0A5C /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		E76DD88C1DA3BFBC00503407 /* ManualSettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualSettingsViewController.swift; sourceTree = "<group>"; };
+		E7707C431CF600E400257A3C /* Double+DroneVR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+DroneVR.swift"; sourceTree = "<group>"; };
+		E7785C781D3038E4005CA32A /* NotificationPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationPresentable.swift; sourceTree = "<group>"; };
+		E77ECF0A1CF86EE6003A8C7D /* CocoaLumberjack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjack.framework; path = Carthage/Build/iOS/CocoaLumberjack.framework; sourceTree = "<group>"; };
+		E77ECF0B1CF86EE6003A8C7D /* CocoaLumberjackSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CocoaLumberjackSwift.framework; path = Carthage/Build/iOS/CocoaLumberjackSwift.framework; sourceTree = "<group>"; };
+		E77ECF0D1CF86EE6003A8C7D /* RxAdditions.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAdditions.framework; path = Carthage/Build/iOS/RxAdditions.framework; sourceTree = "<group>"; };
+		E77ECF551CFC5FFB003A8C7D /* FlyingConfigable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FlyingConfigable.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E77ECF561CFC5FFB003A8C7D /* FlyingGamepadAble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FlyingGamepadAble.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E77ECF591CFC620D003A8C7D /* VideoPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPresentable.swift; sourceTree = "<group>"; };
+		E77ECF5F1CFC66A3003A8C7D /* Disposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		E77ECF611CFC6908003A8C7D /* Dronable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dronable.swift; sourceTree = "<group>"; };
+		E77ECF631CFC7609003A8C7D /* VirtualJoystickMovable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VirtualJoystickMovable.swift; sourceTree = "<group>"; };
+		E77ECF651CFC7AA3003A8C7D /* FlyingInformationsPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingInformationsPresentable.swift; sourceTree = "<group>"; };
+		E77ECF671CFC7EC3003A8C7D /* FlyingConfigPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FlyingConfigPresentable.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E77ECF691CFC836A003A8C7D /* ConnectionPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionPresentable.swift; sourceTree = "<group>"; };
+		E77F250B1CE5C417006DA6CC /* PADroneViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PADroneViewModel.swift; sourceTree = "<group>"; };
+		E78F07541D94EC2D00F48C8B /* Storyboards.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.generated.swift; sourceTree = "<group>"; };
+		E79A0E661D0F017F003EFB3C /* AlertPresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertPresentable.swift; sourceTree = "<group>"; };
+		E79FD25C1CC53BB70068138F /* EasyPeasy.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EasyPeasy.framework; path = Carthage/Build/iOS/EasyPeasy.framework; sourceTree = "<group>"; };
+		E7A2C1D91CD2550E00FBA00C /* DroneVRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneVRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A2C1DB1CD2550E00FBA00C /* DroneVRTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneVRTests.swift; sourceTree = "<group>"; };
+		E7A2C1DD1CD2550E00FBA00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7A2C1EB1CD2551400FBA00C /* DroneVRUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DroneVRUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A2C1ED1CD2551400FBA00C /* DroneVRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneVRUITests.swift; sourceTree = "<group>"; };
+		E7A2C1EF1CD2551400FBA00C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7AB05EB1CE5A1E2004A3C88 /* PADriver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PADriver.h; sourceTree = "<group>"; };
+		E7AB05EC1CE5ADB8004A3C88 /* PABeebopDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PABeebopDriver.h; sourceTree = "<group>"; };
+		E7AB05ED1CE5ADB8004A3C88 /* PABeebopDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PABeebopDriver.m; sourceTree = "<group>"; };
+		E7AB05EF1CE5ADC5004A3C88 /* PAMiniDroneDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMiniDroneDriver.h; sourceTree = "<group>"; };
+		E7AB05F01CE5ADC5004A3C88 /* PAMiniDroneDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAMiniDroneDriver.m; sourceTree = "<group>"; };
+		E7AB25F31D008FCC00255EB0 /* Fonts.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.generated.swift; sourceTree = "<group>"; };
+		E7AB25F61D009D2600255EB0 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		E7AB25F71D009D2600255EB0 /* AnimationSugar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSugar.swift; sourceTree = "<group>"; };
+		E7AD6FAE1D33F9200091CA83 /* GCDKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GCDKit.framework; path = Carthage/Build/iOS/GCDKit.framework; sourceTree = "<group>"; };
+		E7B973DA1D76BBAC00BEEFA6 /* MenuIconButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuIconButton.xib; sourceTree = "<group>"; };
+		E7B973DC1D76EEB500BEEFA6 /* PADroneViewModel+Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PADroneViewModel+Location.swift"; sourceTree = "<group>"; };
+		E7B973DF1D76EEFE00BEEFA6 /* PADroneViewModel+Driver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PADroneViewModel+Driver.swift"; sourceTree = "<group>"; };
+		E7BC21C71DA40D5800B2B3E8 /* ManualSettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualSettingsView.swift; sourceTree = "<group>"; };
+		E7C612CC1CC2194E00B130F2 /* DroneConfigViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = DroneConfigViewModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E7C975EB1D1FC8150006E00B /* ViewControllerTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTransition.swift; sourceTree = "<group>"; };
+		E7C975EE1D1FC90F0006E00B /* MenuVCTransitions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuVCTransitions.swift; sourceTree = "<group>"; };
+		E7CB52C71D942FF100B40553 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		E7D1554D1D2E91E70003A733 /* SF-UI-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Black.otf"; sourceTree = "<group>"; };
+		E7D1554E1D2E91E70003A733 /* SF-UI-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Bold.otf"; sourceTree = "<group>"; };
+		E7D1554F1D2E91E70003A733 /* SF-UI-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Heavy.otf"; sourceTree = "<group>"; };
+		E7D155501D2E91E70003A733 /* SF-UI-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Light.otf"; sourceTree = "<group>"; };
+		E7D155511D2E91E70003A733 /* SF-UI-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Medium.otf"; sourceTree = "<group>"; };
+		E7D155521D2E91E70003A733 /* SF-UI-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.otf"; sourceTree = "<group>"; };
+		E7D155531D2E91E70003A733 /* SF-UI-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Semibold.otf"; sourceTree = "<group>"; };
+		E7D155541D2E91E70003A733 /* SF-UI-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Thin.otf"; sourceTree = "<group>"; };
+		E7D155551D2E91E70003A733 /* SF-UI-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		E7D2FB9F1CBBFC9300785259 /* ManualViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ManualViewModel.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		E7D7113F1DABFA70008F0A29 /* PADroneViewModel+Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PADroneViewModel+Enums.swift"; sourceTree = "<group>"; };
+		E7D711411DAC25F3008F0A29 /* SettingsSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSegmentedControl.swift; sourceTree = "<group>"; };
+		E7D97E7F1D9B93E2002CD3D3 /* GlassesRightLabelHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlassesRightLabelHud.swift; sourceTree = "<group>"; };
+		E7D97E811D9B93ED002CD3D3 /* GlassesRightLabelHud.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GlassesRightLabelHud.xib; sourceTree = "<group>"; };
+		E7E54FD71D18440D00A9016D /* FlyingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingConfiguration.swift; sourceTree = "<group>"; };
+		E7E5A7641D0726AE00E42382 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		E7E5A7651D0726AE00E42382 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		E7E803C31CCFD4F7005C15A5 /* PADummyDriver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADummyDriver.h; sourceTree = "<group>"; };
+		E7E803C41CCFD4F7005C15A5 /* PADummyDriver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADummyDriver.m; sourceTree = "<group>"; };
+		E7EBB60B1CE7173A00BC99A0 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		E7EBB60C1CE7173A00BC99A0 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		E7EBB60E1CE7723500BC99A0 /* FlyingMetricsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlyingMetricsView.swift; sourceTree = "<group>"; };
+		E7F91B431CBCFF4200F062CA /* GamePadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePadViewModel.swift; sourceTree = "<group>"; };
+		E7FE9CB51CB68E4000DE5FEA /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		E7FE9CB61CB68E4000DE5FEA /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppConstants.m; sourceTree = "<group>"; };
+		E7FE9CBA1CB68E4000DE5FEA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E7FE9CC21CB68E4000DE5FEA /* PADroneDiscoverer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PADroneDiscoverer.h; sourceTree = "<group>"; };
+		E7FE9CC31CB68E4000DE5FEA /* PADroneDiscoverer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PADroneDiscoverer.m; sourceTree = "<group>"; };
+		E7FE9CD21CB6915F00DE5FEA /* ManualLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManualLayout.framework; path = Carthage/Build/iOS/ManualLayout.framework; sourceTree = "<group>"; };
+		E7FE9CD31CB6915F00DE5FEA /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		E7FE9CD41CB6915F00DE5FEA /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		E7FE9CDA1CB6921E00DE5FEA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7FE9CDB1CB6921E00DE5FEA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7FE9CDD1CB6926D00DE5FEA /* SDKSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SDKSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7FE9CE11CB6A7A700DE5FEA /* PASDCardModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PASDCardModule.h; sourceTree = "<group>"; };
+		E7FE9CE21CB6A7A700DE5FEA /* PASDCardModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PASDCardModule.m; sourceTree = "<group>"; };
+		E7FE9CE61CB6A88D00DE5FEA /* DroneDiscoveringViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DroneDiscoveringViewModel.swift; sourceTree = "<group>"; };
+		E7FE9CE81CB6A8C600DE5FEA /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E7FE9CEA1CB6A8D900DE5FEA /* ManualViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManualViewController.swift; sourceTree = "<group>"; };
+		E7FE9CF01CB6B5C500DE5FEA /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F8B03D831C7DA4E900149B4F /* DroneVR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DroneVR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8B03D871C7DA4E900149B4F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F8B03D921C7DA4E900149B4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8B03D951C7DA4E900149B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8B03D971C7DA4E900149B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7A2C1D61CD2550E00FBA00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A2C1E81CD2551400FBA00C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B03D801C7DA4E900149B4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E73357F01D8D7C600033CB71 /* AudioToolbox.framework in Frameworks */,
+				E706C4EC1D8C046E0022CFAA /* ExternalAccessory.framework in Frameworks */,
+				E756A1E01D796B1A0075D91B /* MapKit.framework in Frameworks */,
+				E77ECF101CF86EE6003A8C7D /* CocoaLumberjackSwift.framework in Frameworks */,
+				E7AD6FAF1D33F9200091CA83 /* GCDKit.framework in Frameworks */,
+				E764815E1CBAFDC800A9A611 /* CoreMotion.framework in Frameworks */,
+				E7FE9CD81CB6915F00DE5FEA /* RxSwift.framework in Frameworks */,
+				E77ECF0F1CF86EE6003A8C7D /* CocoaLumberjack.framework in Frameworks */,
+				E77ECF121CF86EE6003A8C7D /* RxAdditions.framework in Frameworks */,
+				E73A155A1CECC594003C8BC3 /* TextAttributes.framework in Frameworks */,
+				E79FD25E1CC53BB70068138F /* EasyPeasy.framework in Frameworks */,
+				E7E5A7671D0726AE00E42382 /* Crashlytics.framework in Frameworks */,
+				E73A15591CECC594003C8BC3 /* SwiftyUserDefaults.framework in Frameworks */,
+				E7E5A7661D0726AE00E42382 /* Fabric.framework in Frameworks */,
+				E7FE9CD71CB6915F00DE5FEA /* RxCocoa.framework in Frameworks */,
+				E71BA52B1DA53F4B003EBA7D /* FormatterKit.framework in Frameworks */,
+				E7FE9CD61CB6915F00DE5FEA /* ManualLayout.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E71BA52E1DA56B08003EBA7D /* Segues */ = {
+			isa = PBXGroup;
+			children = (
+				E71BA52F1DA56B08003EBA7D /* DismissSegue.swift */,
+			);
+			path = Segues;
+			sourceTree = "<group>";
+		};
+		E71BA5311DA57445003EBA7D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E71BA5321DA57458003EBA7D /* MapView.swift */,
+				E71BA5341DA57E2F003EBA7D /* MapItemView.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		E74E77881D1AD9F0003606C9 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E74E77891D1AD9FC003606C9 /* MenuView.swift */,
+				E70928571D30EED200C3A287 /* MenuIconButton.swift */,
+				E70928591D30EEDC00C3A287 /* MenuSimpleButton.swift */,
+				E7B973DA1D76BBAC00BEEFA6 /* MenuIconButton.xib */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		E756A1B11D77315C0075D91B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E756A1AD1D7730FA0075D91B /* SettingsView.swift */,
+				E756A1B41D77F7620075D91B /* SettingsBoolean.swift */,
+				E7BC21C71DA40D5800B2B3E8 /* ManualSettingsView.swift */,
+				E7D711411DAC25F3008F0A29 /* SettingsSegmentedControl.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		E756A1BE1D780F730075D91B /* RxOptional */ = {
+			isa = PBXGroup;
+			children = (
+				E756A1BF1D780F730075D91B /* Driver+Occupiable.swift */,
+				E756A1C01D780F730075D91B /* Driver+Optional.swift */,
+				E756A1C11D780F730075D91B /* Observable+Occupiable.swift */,
+				E756A1C21D780F730075D91B /* Observable+Optional.swift */,
+				E756A1C31D780F730075D91B /* Occupiable.swift */,
+				E756A1C41D780F730075D91B /* OptionalType.swift */,
+				E756A1C51D780F730075D91B /* RxOptionalError.swift */,
+			);
+			path = RxOptional;
+			sourceTree = "<group>";
+		};
+		E75D29DD1CFF362D00FF15F0 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB25F31D008FCC00255EB0 /* Fonts.generated.swift */,
+				E75D29E81CFF372C00FF15F0 /* Colors.generated.swift */,
+				E75D29E91CFF372C00FF15F0 /* Images.generated.swift */,
+				E75D29EA1CFF372C00FF15F0 /* Strings.generated.swift */,
+				E78F07541D94EC2D00F48C8B /* Storyboards.generated.swift */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		E75D29DE1CFF363D00FF15F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E7D1554C1D2E91E70003A733 /* Fonts */,
+				E75D29DF1CFF366E00FF15F0 /* Locales */,
+				E75D29E41CFF366E00FF15F0 /* Others */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E75D29DF1CFF366E00FF15F0 /* Locales */ = {
+			isa = PBXGroup;
+			children = (
+				E75D29E01CFF366E00FF15F0 /* Localizable.strings */,
+			);
+			path = Locales;
+			sourceTree = "<group>";
+		};
+		E75D29E41CFF366E00FF15F0 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		E764813D1CB824BE00A9A611 /* Flying */ = {
+			isa = PBXGroup;
+			children = (
+				E764813E1CB8253F00A9A611 /* FlyingView.swift */,
+				E76481401CB8254900A9A611 /* FlyingNormalHud.swift */,
+				E76481421CB8255600A9A611 /* FlyingViewGlassesHud.swift */,
+				E764814A1CB8CE6500A9A611 /* FlyingBatteryLevelView.swift */,
+				E7EBB60E1CE7723500BC99A0 /* FlyingMetricsView.swift */,
+				E721A8D91D087FB700976C29 /* FlyingCameraHorizont.swift */,
+				E74E77761D19D843003606C9 /* RecordingButton.swift */,
+				E74E77781D19DFA8003606C9 /* TakeOffButton.swift */,
+				E74E777A1D19E06C003606C9 /* LineBatteryLevelView.swift */,
+				E74E777E1D19E51F003606C9 /* HudRoundedButton.swift */,
+				E74E77861D1AC06C003606C9 /* FlyingMetricsChangeView.swift */,
+				E756A1D11D7835850075D91B /* GlassesInformationsHud.swift */,
+				E756A1D51D783A3B0075D91B /* GlassesInformationsHud.xib */,
+				E756A1D71D783A7D0075D91B /* GlassesLabelHud.swift */,
+				E756A1D91D783A8E0075D91B /* GlassesLabelHud.xib */,
+				E7D97E7F1D9B93E2002CD3D3 /* GlassesRightLabelHud.swift */,
+				E7D97E811D9B93ED002CD3D3 /* GlassesRightLabelHud.xib */,
+			);
+			name = Flying;
+			sourceTree = "<group>";
+		};
+		E76481501CB8FFB600A9A611 /* Joystick */ = {
+			isa = PBXGroup;
+			children = (
+				E76481511CB8FFB600A9A611 /* JoystickView.h */,
+				E76481521CB8FFB600A9A611 /* JoystickView.m */,
+			);
+			path = Joystick;
+			sourceTree = "<group>";
+		};
+		E76DD88A1DA3BE6100503407 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				E756A1AF1D77313E0075D91B /* SettingsViewController.swift */,
+				E76DD88C1DA3BFBC00503407 /* ManualSettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		E76DD88B1DA3BE6B00503407 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				E74E778B1D1ADA10003606C9 /* MenuViewController.swift */,
+			);
+			name = Menu;
+			sourceTree = "<group>";
+		};
+		E77ECF531CFC5FDC003A8C7D /* Capabables */ = {
+			isa = PBXGroup;
+			children = (
+				E77ECF551CFC5FFB003A8C7D /* FlyingConfigable.swift */,
+				E77ECF561CFC5FFB003A8C7D /* FlyingGamepadAble.swift */,
+				E77ECF5F1CFC66A3003A8C7D /* Disposable.swift */,
+				E77ECF611CFC6908003A8C7D /* Dronable.swift */,
+				E77ECF631CFC7609003A8C7D /* VirtualJoystickMovable.swift */,
+				E756A1CF1D7827CB0075D91B /* HudScaleAnimatable.swift */,
+				E756A1E31D8158AC0075D91B /* Flyingable.swift */,
+			);
+			path = Capabables;
+			sourceTree = "<group>";
+		};
+		E77ECF541CFC5FDC003A8C7D /* Presentables */ = {
+			isa = PBXGroup;
+			children = (
+				E77ECF591CFC620D003A8C7D /* VideoPresentable.swift */,
+				E77ECF651CFC7AA3003A8C7D /* FlyingInformationsPresentable.swift */,
+				E77ECF671CFC7EC3003A8C7D /* FlyingConfigPresentable.swift */,
+				E77ECF691CFC836A003A8C7D /* ConnectionPresentable.swift */,
+				E79A0E661D0F017F003EFB3C /* AlertPresentable.swift */,
+				E74E778D1D1ADDFE003606C9 /* MenuPresentable.swift */,
+				E7785C781D3038E4005CA32A /* NotificationPresentable.swift */,
+			);
+			path = Presentables;
+			sourceTree = "<group>";
+		};
+		E79FD2591CC5389B0068138F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E73A155D1CECC8D8003C8BC3 /* DroneMetrics.swift */,
+				E7E54FD71D18440D00A9016D /* FlyingConfiguration.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7A2C1DA1CD2550E00FBA00C /* DroneVRTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2C1DB1CD2550E00FBA00C /* DroneVRTests.swift */,
+				E7A2C1DD1CD2550E00FBA00C /* Info.plist */,
+			);
+			path = DroneVRTests;
+			sourceTree = "<group>";
+		};
+		E7A2C1EC1CD2551400FBA00C /* DroneVRUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E7A2C1ED1CD2551400FBA00C /* DroneVRUITests.swift */,
+				E7A2C1EF1CD2551400FBA00C /* Info.plist */,
+			);
+			path = DroneVRUITests;
+			sourceTree = "<group>";
+		};
+		E7AB25F51D009D2600255EB0 /* AnimationSugar */ = {
+			isa = PBXGroup;
+			children = (
+				E7AB25F61D009D2600255EB0 /* .gitkeep */,
+				E7AB25F71D009D2600255EB0 /* AnimationSugar.swift */,
+			);
+			path = AnimationSugar;
+			sourceTree = "<group>";
+		};
+		E7B973DE1D76EEBB00BEEFA6 /* DroneViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E77F250B1CE5C417006DA6CC /* PADroneViewModel.swift */,
+				E7B973DC1D76EEB500BEEFA6 /* PADroneViewModel+Location.swift */,
+				E7B973DF1D76EEFE00BEEFA6 /* PADroneViewModel+Driver.swift */,
+				E7D7113F1DABFA70008F0A29 /* PADroneViewModel+Enums.swift */,
+			);
+			name = DroneViewModel;
+			sourceTree = "<group>";
+		};
+		E7C975ED1D1FC8FB0006E00B /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				E7C975EE1D1FC90F0006E00B /* MenuVCTransitions.swift */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		E7CB52C61D942FE100B40553 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB52C71D942FF100B40553 /* Button.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		E7D1554C1D2E91E70003A733 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E7D1554D1D2E91E70003A733 /* SF-UI-Display-Black.otf */,
+				E7D1554E1D2E91E70003A733 /* SF-UI-Display-Bold.otf */,
+				E7D1554F1D2E91E70003A733 /* SF-UI-Display-Heavy.otf */,
+				E7D155501D2E91E70003A733 /* SF-UI-Display-Light.otf */,
+				E7D155511D2E91E70003A733 /* SF-UI-Display-Medium.otf */,
+				E7D155521D2E91E70003A733 /* SF-UI-Display-Regular.otf */,
+				E7D155531D2E91E70003A733 /* SF-UI-Display-Semibold.otf */,
+				E7D155541D2E91E70003A733 /* SF-UI-Display-Thin.otf */,
+				E7D155551D2E91E70003A733 /* SF-UI-Display-Ultralight.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E7EBB60A1CE7173A00BC99A0 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				E7EBB60B1CE7173A00BC99A0 /* FXBlurView.h */,
+				E7EBB60C1CE7173A00BC99A0 /* FXBlurView.m */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
+		E7FE9C901CB68E2F00DE5FEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E71BA52A1DA53F4B003EBA7D /* FormatterKit.framework */,
+				E73357EF1D8D7C600033CB71 /* AudioToolbox.framework */,
+				E706C4EB1D8C046E0022CFAA /* ExternalAccessory.framework */,
+				E756A1DF1D796B1A0075D91B /* MapKit.framework */,
+				E7AD6FAE1D33F9200091CA83 /* GCDKit.framework */,
+				E7E5A7641D0726AE00E42382 /* Fabric.framework */,
+				E7E5A7651D0726AE00E42382 /* Crashlytics.framework */,
+				E77ECF0A1CF86EE6003A8C7D /* CocoaLumberjack.framework */,
+				E77ECF0B1CF86EE6003A8C7D /* CocoaLumberjackSwift.framework */,
+				E77ECF0D1CF86EE6003A8C7D /* RxAdditions.framework */,
+				E73A15571CECC594003C8BC3 /* SwiftyUserDefaults.framework */,
+				E73A15581CECC594003C8BC3 /* TextAttributes.framework */,
+				E79FD25C1CC53BB70068138F /* EasyPeasy.framework */,
+				E764815D1CBAFDC800A9A611 /* CoreMotion.framework */,
+				E7FE9CD21CB6915F00DE5FEA /* ManualLayout.framework */,
+				E7FE9CD31CB6915F00DE5FEA /* RxCocoa.framework */,
+				E7FE9CD41CB6915F00DE5FEA /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7FE9C911CB68E3B00DE5FEA /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				E756A1BE1D780F730075D91B /* RxOptional */,
+				E7AB25F51D009D2600255EB0 /* AnimationSugar */,
+				E7EBB60A1CE7173A00BC99A0 /* FXBlurView */,
+				E76481501CB8FFB600A9A611 /* Joystick */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		E7FE9CB31CB68E4000DE5FEA /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				E71BA52E1DA56B08003EBA7D /* Segues */,
+				E7C975ED1D1FC8FB0006E00B /* Transitions */,
+				E75D29DD1CFF362D00FF15F0 /* Generated */,
+				E77ECF531CFC5FDC003A8C7D /* Capabables */,
+				E77ECF541CFC5FDC003A8C7D /* Presentables */,
+				E79FD2591CC5389B0068138F /* Models */,
+				E7FE9CB41CB68E4000DE5FEA /* App */,
+				E7FE9CB91CB68E4000DE5FEA /* Controllers */,
+				E7FE9CBC1CB68E4000DE5FEA /* Extensions */,
+				E7FE9CBD1CB68E4000DE5FEA /* Helpers */,
+				E7FE9CBF1CB68E4000DE5FEA /* ParrotDrone */,
+				E7FE9CC81CB68E4000DE5FEA /* ViewModels */,
+				E7FE9CC91CB68E4000DE5FEA /* Views */,
+			);
+			path = Code;
+			sourceTree = "<group>";
+		};
+		E7FE9CB41CB68E4000DE5FEA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE9CDA1CB6921E00DE5FEA /* AppDelegate.h */,
+				E7FE9CDB1CB6921E00DE5FEA /* AppDelegate.m */,
+				E7FE9CB51CB68E4000DE5FEA /* AppConstants.h */,
+				E7FE9CB61CB68E4000DE5FEA /* AppConstants.m */,
+				E74E77821D1A7969003606C9 /* Applications.swift */,
+				E74E77841D1A798F003606C9 /* Fonts.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E7FE9CB91CB68E4000DE5FEA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E76DD88B1DA3BE6B00503407 /* Menu */,
+				E76DD88A1DA3BE6100503407 /* Settings */,
+				E7FE9CBA1CB68E4000DE5FEA /* NavigationController.swift */,
+				E7FE9CE81CB6A8C600DE5FEA /* MainViewController.swift */,
+				E7FE9CEA1CB6A8D900DE5FEA /* ManualViewController.swift */,
+				E756A1DD1D7969AD0075D91B /* MapViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7FE9CBC1CB68E4000DE5FEA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E75253C31F7BABF6002AFC70 /* UIColor.swift */,
+				E75253C41F7BABF6002AFC70 /* UIImage.swift */,
+				E75253C51F7BABF6002AFC70 /* UIView.swift */,
+				E75253C61F7BABF6002AFC70 /* UIViewController.swift */,
+				E7707C431CF600E400257A3C /* Double+DroneVR.swift */,
+				E756A1BA1D77F99D0075D91B /* UINib+DroneVR.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E7FE9CBD1CB68E4000DE5FEA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E7C975EB1D1FC8150006E00B /* ViewControllerTransition.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E7FE9CBF1CB68E4000DE5FEA /* ParrotDrone */ = {
+			isa = PBXGroup;
+			children = (
+				E764815A1CB92ABB00A9A611 /* PABebopVideoView.h */,
+				E764815B1CB92ABB00A9A611 /* PABebopVideoView.m */,
+				E7FE9CE11CB6A7A700DE5FEA /* PASDCardModule.h */,
+				E7FE9CE21CB6A7A700DE5FEA /* PASDCardModule.m */,
+				E7FE9CC21CB68E4000DE5FEA /* PADroneDiscoverer.h */,
+				E7FE9CC31CB68E4000DE5FEA /* PADroneDiscoverer.m */,
+				E7E803C31CCFD4F7005C15A5 /* PADummyDriver.h */,
+				E7E803C41CCFD4F7005C15A5 /* PADummyDriver.m */,
+				E7AB05EB1CE5A1E2004A3C88 /* PADriver.h */,
+				E7AB05EC1CE5ADB8004A3C88 /* PABeebopDriver.h */,
+				E7AB05ED1CE5ADB8004A3C88 /* PABeebopDriver.m */,
+				E7AB05EF1CE5ADC5004A3C88 /* PAMiniDroneDriver.h */,
+				E7AB05F01CE5ADC5004A3C88 /* PAMiniDroneDriver.m */,
+				E76CB5AF1CE6F221008D0A5C /* PACommonDriver.h */,
+				E76CB5B01CE6F221008D0A5C /* PACommonDriver.m */,
+				E74B51B41DA0EC0800F33F3C /* PaMediaModel.h */,
+				E74B51B51DA0EC0800F33F3C /* PaMediaModel.m */,
+			);
+			path = ParrotDrone;
+			sourceTree = "<group>";
+		};
+		E7FE9CC81CB68E4000DE5FEA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E7B973DE1D76EEBB00BEEFA6 /* DroneViewModel */,
+				E7FE9CE61CB6A88D00DE5FEA /* DroneDiscoveringViewModel.swift */,
+				E764814E1CB8EE3900A9A611 /* VirtualRealityViewModel.swift */,
+				E7D2FB9F1CBBFC9300785259 /* ManualViewModel.swift */,
+				E7F91B431CBCFF4200F062CA /* GamePadViewModel.swift */,
+				E7C612CC1CC2194E00B130F2 /* DroneConfigViewModel.swift */,
+				E756A1B21D77EB700075D91B /* RecoveryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E7FE9CC91CB68E4000DE5FEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E71BA5311DA57445003EBA7D /* Map */,
+				E7CB52C61D942FE100B40553 /* Shared */,
+				E756A1B11D77315C0075D91B /* Settings */,
+				E74E77881D1AD9F0003606C9 /* Menu */,
+				E764813D1CB824BE00A9A611 /* Flying */,
+				E7FE9CEF1CB6B5B100DE5FEA /* Main */,
+				E76CB5B21CE6F384008D0A5C /* AlertView.swift */,
+				E74E777C1D19E480003606C9 /* NotificationView.swift */,
+				E70928551D30C9A200C3A287 /* ViewStateMachine.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7FE9CEF1CB6B5B100DE5FEA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE9CF01CB6B5C500DE5FEA /* MainView.swift */,
+				E75D29EE1CFF3B9B00FF15F0 /* FlyButton.swift */,
+				E75D29F01CFF3ED900FF15F0 /* ConnectedStateView.swift */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		F8B03D7A1C7DA4E900149B4F = {
+			isa = PBXGroup;
+			children = (
+				E75D29DE1CFF363D00FF15F0 /* Resources */,
+				E7FE9CB31CB68E4000DE5FEA /* Code */,
+				E7FE9C911CB68E3B00DE5FEA /* Vendor */,
+				E7A2C1DA1CD2550E00FBA00C /* DroneVRTests */,
+				E7A2C1EC1CD2551400FBA00C /* DroneVRUITests */,
+				E7FE9C901CB68E2F00DE5FEA /* Frameworks */,
+				F8B03D851C7DA4E900149B4F /* SDKSample */,
+				F8B03D841C7DA4E900149B4F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8B03D841C7DA4E900149B4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8B03D831C7DA4E900149B4F /* DroneVR.app */,
+				E7A2C1D91CD2550E00FBA00C /* DroneVRTests.xctest */,
+				E7A2C1EB1CD2551400FBA00C /* DroneVRUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8B03D851C7DA4E900149B4F /* SDKSample */ = {
+			isa = PBXGroup;
+			children = (
+				E7FE9CDD1CB6926D00DE5FEA /* SDKSample-Bridging-Header.h */,
+				F8B03D921C7DA4E900149B4F /* Assets.xcassets */,
+				F8B03D941C7DA4E900149B4F /* LaunchScreen.storyboard */,
+				F8B03D971C7DA4E900149B4F /* Info.plist */,
+				F8B03D861C7DA4E900149B4F /* Supporting Files */,
+				E756A1DB1D79684C0075D91B /* MainStoryboard.storyboard */,
+			);
+			path = SDKSample;
+			sourceTree = "<group>";
+		};
+		F8B03D861C7DA4E900149B4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8B03D871C7DA4E900149B4F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7A2C1D81CD2550E00FBA00C /* DroneVRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A2C1E61CD2550E00FBA00C /* Build configuration list for PBXNativeTarget "DroneVRTests" */;
+			buildPhases = (
+				E7A2C1D51CD2550E00FBA00C /* Sources */,
+				E7A2C1D61CD2550E00FBA00C /* Frameworks */,
+				E7A2C1D71CD2550E00FBA00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A2C1DF1CD2550E00FBA00C /* PBXTargetDependency */,
+			);
+			name = DroneVRTests;
+			productName = DroneVRTests;
+			productReference = E7A2C1D91CD2550E00FBA00C /* DroneVRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7A2C1EA1CD2551400FBA00C /* DroneVRUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A2C1F21CD2551400FBA00C /* Build configuration list for PBXNativeTarget "DroneVRUITests" */;
+			buildPhases = (
+				E7A2C1E71CD2551400FBA00C /* Sources */,
+				E7A2C1E81CD2551400FBA00C /* Frameworks */,
+				E7A2C1E91CD2551400FBA00C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A2C1F11CD2551400FBA00C /* PBXTargetDependency */,
+			);
+			name = DroneVRUITests;
+			productName = DroneVRUITests;
+			productReference = E7A2C1EB1CD2551400FBA00C /* DroneVRUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		F8B03D821C7DA4E900149B4F /* DroneVR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8B03DB01C7DA4E900149B4F /* Build configuration list for PBXNativeTarget "DroneVR" */;
+			buildPhases = (
+				F8B03D7F1C7DA4E900149B4F /* Sources */,
+				F8B03D801C7DA4E900149B4F /* Frameworks */,
+				F8B03D811C7DA4E900149B4F /* Resources */,
+				E7FE9C881CB68A8800DE5FEA /* Run Script */,
+				E7E5A7631D07268D00E42382 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DroneVR;
+			productName = SDKSample;
+			productReference = F8B03D831C7DA4E900149B4F /* DroneVR.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8B03D7B1C7DA4E900149B4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Parrot;
+				TargetAttributes = {
+					E7A2C1D81CD2550E00FBA00C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F8B03D821C7DA4E900149B4F;
+					};
+					E7A2C1EA1CD2551400FBA00C = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = F8B03D821C7DA4E900149B4F;
+					};
+					F8B03D821C7DA4E900149B4F = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = ES67F5P4L4;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F8B03D7E1C7DA4E900149B4F /* Build configuration list for PBXProject "DroneVR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8B03D7A1C7DA4E900149B4F;
+			productRefGroup = F8B03D841C7DA4E900149B4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8B03D821C7DA4E900149B4F /* DroneVR */,
+				E7A2C1D81CD2550E00FBA00C /* DroneVRTests */,
+				E7A2C1EA1CD2551400FBA00C /* DroneVRUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7A2C1D71CD2550E00FBA00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A2C1E91CD2551400FBA00C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B03D811C7DA4E900149B4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D155561D2E91E70003A733 /* SF-UI-Display-Black.otf in Resources */,
+				F8B03D961C7DA4E900149B4F /* LaunchScreen.storyboard in Resources */,
+				E7D1555B1D2E91E70003A733 /* SF-UI-Display-Regular.otf in Resources */,
+				E7D155591D2E91E70003A733 /* SF-UI-Display-Light.otf in Resources */,
+				E7D1555E1D2E91E70003A733 /* SF-UI-Display-Ultralight.otf in Resources */,
+				E7D97E821D9B93ED002CD3D3 /* GlassesRightLabelHud.xib in Resources */,
+				E756A1DC1D79684C0075D91B /* MainStoryboard.storyboard in Resources */,
+				E7D1555D1D2E91E70003A733 /* SF-UI-Display-Thin.otf in Resources */,
+				E756A1D61D783A3B0075D91B /* GlassesInformationsHud.xib in Resources */,
+				E7D1555A1D2E91E70003A733 /* SF-UI-Display-Medium.otf in Resources */,
+				E75D29E61CFF366E00FF15F0 /* Localizable.strings in Resources */,
+				F8B03D931C7DA4E900149B4F /* Assets.xcassets in Resources */,
+				E7D155571D2E91E70003A733 /* SF-UI-Display-Bold.otf in Resources */,
+				E7D155581D2E91E70003A733 /* SF-UI-Display-Heavy.otf in Resources */,
+				E7B973DB1D76BBAC00BEEFA6 /* MenuIconButton.xib in Resources */,
+				E7AB25F81D009D2600255EB0 /* .gitkeep in Resources */,
+				E7D1555C1D2E91E70003A733 /* SF-UI-Display-Semibold.otf in Resources */,
+				E756A1DA1D783A8E0075D91B /* GlassesLabelHud.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7E5A7631D07268D00E42382 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 76c7c4d7d0fe8ad277ae8874b935f5cfe0ab0df4 ddc1970b5f460b82e69fd944519f746588b302df4f431f7219dc5405eaff75e7";
+		};
+		E7FE9C881CB68A8800DE5FEA /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ManualLayout.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/EasyPeasy.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyUserDefaults.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TextAttributes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjack.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CocoaLumberjackSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxAdditions.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/GCDKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FormatterKit.framework",
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7A2C1D51CD2550E00FBA00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A2C1DC1CD2550E00FBA00C /* DroneVRTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7A2C1E71CD2551400FBA00C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A2C1EE1CD2551400FBA00C /* DroneVRUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8B03D7F1C7DA4E900149B4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E77ECF681CFC7EC3003A8C7D /* FlyingConfigPresentable.swift in Sources */,
+				E71BA5331DA57458003EBA7D /* MapView.swift in Sources */,
+				E7D2FBA01CBBFC9300785259 /* ManualViewModel.swift in Sources */,
+				E756A1CA1D780F730075D91B /* Occupiable.swift in Sources */,
+				E75D29EF1CFF3B9B00FF15F0 /* FlyButton.swift in Sources */,
+				E74E77831D1A7969003606C9 /* Applications.swift in Sources */,
+				E7F91B441CBCFF4200F062CA /* GamePadViewModel.swift in Sources */,
+				E7EBB60D1CE7173A00BC99A0 /* FXBlurView.m in Sources */,
+				E75D29EB1CFF372C00FF15F0 /* Colors.generated.swift in Sources */,
+				E74E778C1D1ADA10003606C9 /* MenuViewController.swift in Sources */,
+				E7E54FD81D18440D00A9016D /* FlyingConfiguration.swift in Sources */,
+				E756A1D01D7827CB0075D91B /* HudScaleAnimatable.swift in Sources */,
+				F8B03D881C7DA4E900149B4F /* main.m in Sources */,
+				E756A1B01D77313E0075D91B /* SettingsViewController.swift in Sources */,
+				E76481411CB8254900A9A611 /* FlyingNormalHud.swift in Sources */,
+				E7B973E01D76EEFE00BEEFA6 /* PADroneViewModel+Driver.swift in Sources */,
+				E756A1C81D780F730075D91B /* Observable+Occupiable.swift in Sources */,
+				E709285A1D30EEDC00C3A287 /* MenuSimpleButton.swift in Sources */,
+				E7AB05F11CE5ADC5004A3C88 /* PAMiniDroneDriver.m in Sources */,
+				E7D711401DABFA70008F0A29 /* PADroneViewModel+Enums.swift in Sources */,
+				E7FE9CEB1CB6A8D900DE5FEA /* ManualViewController.swift in Sources */,
+				E74E77771D19D843003606C9 /* RecordingButton.swift in Sources */,
+				E77ECF601CFC66A3003A8C7D /* Disposable.swift in Sources */,
+				E76CB5B11CE6F221008D0A5C /* PACommonDriver.m in Sources */,
+				E764815C1CB92ABB00A9A611 /* PABebopVideoView.m in Sources */,
+				E764814F1CB8EE3900A9A611 /* VirtualRealityViewModel.swift in Sources */,
+				E75D29ED1CFF372C00FF15F0 /* Strings.generated.swift in Sources */,
+				E7FE9CE71CB6A88D00DE5FEA /* DroneDiscoveringViewModel.swift in Sources */,
+				E79A0E671D0F017F003EFB3C /* AlertPresentable.swift in Sources */,
+				E77ECF5A1CFC620D003A8C7D /* VideoPresentable.swift in Sources */,
+				E77ECF571CFC5FFB003A8C7D /* FlyingConfigable.swift in Sources */,
+				E75D29F11CFF3ED900FF15F0 /* ConnectedStateView.swift in Sources */,
+				E7FE9CE31CB6A7A700DE5FEA /* PASDCardModule.m in Sources */,
+				E756A1D81D783A7D0075D91B /* GlassesLabelHud.swift in Sources */,
+				E70928561D30C9A200C3A287 /* ViewStateMachine.swift in Sources */,
+				E74E77851D1A798F003606C9 /* Fonts.swift in Sources */,
+				E7E803C51CCFD4F7005C15A5 /* PADummyDriver.m in Sources */,
+				E74E778E1D1ADDFE003606C9 /* MenuPresentable.swift in Sources */,
+				E73A155E1CECC8D8003C8BC3 /* DroneMetrics.swift in Sources */,
+				E7C612CD1CC2194E00B130F2 /* DroneConfigViewModel.swift in Sources */,
+				E77ECF661CFC7AA3003A8C7D /* FlyingInformationsPresentable.swift in Sources */,
+				E76481571CB8FFB600A9A611 /* JoystickView.m in Sources */,
+				E77F250C1CE5C417006DA6CC /* PADroneViewModel.swift in Sources */,
+				E764814B1CB8CE6500A9A611 /* FlyingBatteryLevelView.swift in Sources */,
+				E7C975EF1D1FC90F0006E00B /* MenuVCTransitions.swift in Sources */,
+				E756A1B51D77F7620075D91B /* SettingsBoolean.swift in Sources */,
+				E77ECF621CFC6908003A8C7D /* Dronable.swift in Sources */,
+				E7C975EC1D1FC8150006E00B /* ViewControllerTransition.swift in Sources */,
+				E7AB05EE1CE5ADB8004A3C88 /* PABeebopDriver.m in Sources */,
+				E756A1CC1D780F730075D91B /* RxOptionalError.swift in Sources */,
+				E71BA5351DA57E2F003EBA7D /* MapItemView.swift in Sources */,
+				E7D97E801D9B93E2002CD3D3 /* GlassesRightLabelHud.swift in Sources */,
+				E74E77791D19DFA8003606C9 /* TakeOffButton.swift in Sources */,
+				E76DD88D1DA3BFBC00503407 /* ManualSettingsViewController.swift in Sources */,
+				E7FE9CCA1CB68E4000DE5FEA /* AppConstants.m in Sources */,
+				E74B51B61DA0EC0800F33F3C /* PaMediaModel.m in Sources */,
+				E74E777B1D19E06C003606C9 /* LineBatteryLevelView.swift in Sources */,
+				E74E77871D1AC06C003606C9 /* FlyingMetricsChangeView.swift in Sources */,
+				E756A1C71D780F730075D91B /* Driver+Optional.swift in Sources */,
+				E7707C441CF600E400257A3C /* Double+DroneVR.swift in Sources */,
+				E756A1DE1D7969AD0075D91B /* MapViewController.swift in Sources */,
+				E756A1D21D7835850075D91B /* GlassesInformationsHud.swift in Sources */,
+				E756A1E41D8158AC0075D91B /* Flyingable.swift in Sources */,
+				E75253C91F7BABF6002AFC70 /* UIView.swift in Sources */,
+				E7FE9CCF1CB68E4000DE5FEA /* PADroneDiscoverer.m in Sources */,
+				E7FE9CE91CB6A8C600DE5FEA /* MainViewController.swift in Sources */,
+				E756A1C61D780F730075D91B /* Driver+Occupiable.swift in Sources */,
+				E7CB52C81D942FF100B40553 /* Button.swift in Sources */,
+				E77ECF6A1CFC836A003A8C7D /* ConnectionPresentable.swift in Sources */,
+				E75253C71F7BABF6002AFC70 /* UIColor.swift in Sources */,
+				E756A1BB1D77F99D0075D91B /* UINib+DroneVR.swift in Sources */,
+				E77ECF641CFC7609003A8C7D /* VirtualJoystickMovable.swift in Sources */,
+				E77ECF581CFC5FFB003A8C7D /* FlyingGamepadAble.swift in Sources */,
+				E76481431CB8255600A9A611 /* FlyingViewGlassesHud.swift in Sources */,
+				E74E778A1D1AD9FC003606C9 /* MenuView.swift in Sources */,
+				E70928581D30EED200C3A287 /* MenuIconButton.swift in Sources */,
+				E7EBB60F1CE7723500BC99A0 /* FlyingMetricsView.swift in Sources */,
+				E756A1AE1D7730FB0075D91B /* SettingsView.swift in Sources */,
+				E756A1C91D780F730075D91B /* Observable+Optional.swift in Sources */,
+				E7FE9CF11CB6B5C500DE5FEA /* MainView.swift in Sources */,
+				E75D29EC1CFF372C00FF15F0 /* Images.generated.swift in Sources */,
+				E78F07551D94EC2D00F48C8B /* Storyboards.generated.swift in Sources */,
+				E76CB5B31CE6F384008D0A5C /* AlertView.swift in Sources */,
+				E7AB25F41D008FCC00255EB0 /* Fonts.generated.swift in Sources */,
+				E7FE9CCC1CB68E4000DE5FEA /* NavigationController.swift in Sources */,
+				E721A8DA1D087FB700976C29 /* FlyingCameraHorizont.swift in Sources */,
+				E74E777D1D19E480003606C9 /* NotificationView.swift in Sources */,
+				E74E777F1D19E51F003606C9 /* HudRoundedButton.swift in Sources */,
+				E75253C81F7BABF6002AFC70 /* UIImage.swift in Sources */,
+				E7AB25F91D009D2600255EB0 /* AnimationSugar.swift in Sources */,
+				E7BC21C81DA40D5800B2B3E8 /* ManualSettingsView.swift in Sources */,
+				E7FE9CDC1CB6921E00DE5FEA /* AppDelegate.m in Sources */,
+				E7D711421DAC25F3008F0A29 /* SettingsSegmentedControl.swift in Sources */,
+				E7B973DD1D76EEB500BEEFA6 /* PADroneViewModel+Location.swift in Sources */,
+				E75253CA1F7BABF6002AFC70 /* UIViewController.swift in Sources */,
+				E756A1B31D77EB700075D91B /* RecoveryViewModel.swift in Sources */,
+				E71BA5301DA56B08003EBA7D /* DismissSegue.swift in Sources */,
+				E7785C791D3038E4005CA32A /* NotificationPresentable.swift in Sources */,
+				E764813F1CB8253F00A9A611 /* FlyingView.swift in Sources */,
+				E756A1CB1D780F730075D91B /* OptionalType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7A2C1DF1CD2550E00FBA00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8B03D821C7DA4E900149B4F /* DroneVR */;
+			targetProxy = E7A2C1DE1CD2550E00FBA00C /* PBXContainerItemProxy */;
+		};
+		E7A2C1F11CD2551400FBA00C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8B03D821C7DA4E900149B4F /* DroneVR */;
+			targetProxy = E7A2C1F01CD2551400FBA00C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E75D29E01CFF366E00FF15F0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E75D29E11CFF366E00FF15F0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		F8B03D941C7DA4E900149B4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8B03D951C7DA4E900149B4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E705B84C1CC1368400B80B15 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = AppStore;
+		};
+		E705B84D1CC1368400B80B15 /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DAppStore";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+			};
+			name = AppStore;
+		};
+		E705B84E1CC1369100B80B15 /* Simulator */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Simulator;
+		};
+		E705B84F1CC1369100B80B15 /* Simulator */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DSimulator";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Simulator;
+		};
+		E705B8501CC136E500B80B15 /* DJI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DJI;
+		};
+		E705B8511CC136E500B80B15 /* DJI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DMiniDrone";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = DJI;
+		};
+		E7970DF31CB543810078C19E /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Test;
+		};
+		E7970DF41CB543810078C19E /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DTest";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Test;
+		};
+		E7A2C1E01CD2550E00FBA00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = Debug;
+		};
+		E7A2C1E11CD2550E00FBA00C /* DJI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = DJI;
+		};
+		E7A2C1E21CD2550E00FBA00C /* Simulator */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = Simulator;
+		};
+		E7A2C1E31CD2550E00FBA00C /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = Test;
+		};
+		E7A2C1E41CD2550E00FBA00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = Release;
+		};
+		E7A2C1E51CD2550E00FBA00C /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DroneVR.app/DroneVR";
+			};
+			name = AppStore;
+		};
+		E7A2C1F31CD2551400FBA00C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = Debug;
+		};
+		E7A2C1F41CD2551400FBA00C /* DJI */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = DJI;
+		};
+		E7A2C1F51CD2551400FBA00C /* Simulator */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = Simulator;
+		};
+		E7A2C1F61CD2551400FBA00C /* Test */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = Test;
+		};
+		E7A2C1F71CD2551400FBA00C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = Release;
+		};
+		E7A2C1F81CD2551400FBA00C /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = DroneVRUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = brunow.DroneVRUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DroneVR;
+			};
+			name = AppStore;
+		};
+		F8B03DAE1C7DA4E900149B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8B03DAF1C7DA4E900149B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8B03DB11C7DA4E900149B4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DDebug";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8B03DB21C7DA4E900149B4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"DEAD_CODE_STRIPPING[arch=*]" = YES;
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "CONFIGURATION_${CONFIGURATION}";
+				"HEADER_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/include";
+				"HEADER_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/include";
+				INFOPLIST_FILE = SDKSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*]" = "ARSDK3_iOS/iOS-iphoneos/staging/usr/lib";
+				"LIBRARY_SEARCH_PATHS[sdk=iphonesimulator*]" = "ARSDK3_iOS/iOS-iphonesimulator/staging/usr/lib";
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-larcommands",
+					"-larcontroller",
+					"-lardiscovery",
+					"-larnetwork",
+					"-larnetworkal",
+					"-larsal",
+					"-larstream",
+					"-larstream2",
+					"-larmavlink",
+					"-ljson",
+					"-larmedia",
+					"-larutils",
+					"-lcurl",
+					"-lardatatransfer",
+					"-lcrypto",
+					"-lpomp",
+					"-lz",
+					"-lssl",
+					"-lmux",
+					"-lardiscoverywithouteacc",
+				);
+				OTHER_SWIFT_FLAGS = "-DRelease";
+				PRODUCT_BUNDLE_IDENTIFIER = be.brunow.drone;
+				PRODUCT_NAME = DroneVR;
+				SWIFT_OBJC_BRIDGING_HEADER = "SDKSample/SDKSample-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7A2C1E61CD2550E00FBA00C /* Build configuration list for PBXNativeTarget "DroneVRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A2C1E01CD2550E00FBA00C /* Debug */,
+				E7A2C1E11CD2550E00FBA00C /* DJI */,
+				E7A2C1E21CD2550E00FBA00C /* Simulator */,
+				E7A2C1E31CD2550E00FBA00C /* Test */,
+				E7A2C1E41CD2550E00FBA00C /* Release */,
+				E7A2C1E51CD2550E00FBA00C /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7A2C1F21CD2551400FBA00C /* Build configuration list for PBXNativeTarget "DroneVRUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A2C1F31CD2551400FBA00C /* Debug */,
+				E7A2C1F41CD2551400FBA00C /* DJI */,
+				E7A2C1F51CD2551400FBA00C /* Simulator */,
+				E7A2C1F61CD2551400FBA00C /* Test */,
+				E7A2C1F71CD2551400FBA00C /* Release */,
+				E7A2C1F81CD2551400FBA00C /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B03D7E1C7DA4E900149B4F /* Build configuration list for PBXProject "DroneVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B03DAE1C7DA4E900149B4F /* Debug */,
+				E705B8501CC136E500B80B15 /* DJI */,
+				E705B84E1CC1369100B80B15 /* Simulator */,
+				E7970DF31CB543810078C19E /* Test */,
+				F8B03DAF1C7DA4E900149B4F /* Release */,
+				E705B84C1CC1368400B80B15 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8B03DB01C7DA4E900149B4F /* Build configuration list for PBXNativeTarget "DroneVR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8B03DB11C7DA4E900149B4F /* Debug */,
+				E705B8511CC136E500B80B15 /* DJI */,
+				E705B84F1CC1369100B80B15 /* Simulator */,
+				E7970DF41CB543810078C19E /* Test */,
+				F8B03DB21C7DA4E900149B4F /* Release */,
+				E705B84D1CC1368400B80B15 /* AppStore */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8B03D7B1C7DA4E900149B4F /* Project object */;
+}

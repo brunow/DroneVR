@@ -1,0 +1,27 @@
+# RX
+github "ReactiveX/RxSwift" ~> 2.5.0
+github "pixeldock/RxAppState" ~> 0.1.0
+github "RxSwiftCommunity/RxOptional" ~> 2.0
+github "RxSwiftCommunity/RxSwiftExt" ~> 1.1
+# github "sunshinejr/RxPermission" ~> 0.1.0
+# github "RxSwiftCommunity/NSObject-Rx" ~> 1.2.0
+
+# Layout
+github "nakiostudio/EasyPeasy" ~> 0.2
+github "isair/ManualLayout" ~> 1.2
+
+# Others
+github "CocoaLumberjack/CocoaLumberjack" ~> 2.3.0
+# github "melke/LogglyLogger-CocoaLumberjack"
+github "JohnEstropia/GCDKit" ~> 1.2
+# github "nickoneill/PermissionScope" ~> 1.0
+#github "intrepidmatt/AnimationSugar" ~> 0.0.2
+github "radex/SwiftyUserDefaults" ~> 2.2
+github "delba/TextAttributes" ~> 0.3
+github "ninjaprox/NVActivityIndicatorView" ~> 2.9
+github "mattt/FormatterKit" ~> 1.8
+github "facebook/Facebook-SDK-Swift" ~> 0.1
+
+# Own
+git "/Users/cesar4/Code/Swift/BWKit" "master"
+git "/Users/cesar4/Code/Swift/RxAdditions" "master"

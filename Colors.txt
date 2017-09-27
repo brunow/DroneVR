@@ -1,0 +1,10 @@
+Text          : FFFFFF
+FlyHUDText    : FFFFFF
+FlyBadGPS     : FF0000
+LowBatttery   : FF0000
+MiddleBattery : FFCD00
+HighBattery   : 7ED321
+HudText       : 434343
+SwitchColor   : 50E3D7
+FlyHUDVRText  : 52EDC7
+SettingsTextColor: 464646

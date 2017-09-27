@@ -1,0 +1,27 @@
+principalClass: _AppConfig
+
+Release:
+    log: 1
+
+Debug:
+    log: 1
+
+Testing:
+    log: 1
+
+Simulator:
+    log: 1
+
+
+
+# !!! Not change
+
+Testflight:
+    log: 0
+
+Screenshot:
+    log: 0
+
+AppStore:
+    log: 0
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MenuIconButton" customModule="DroneVR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="146" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuIconBackground" translatesAutoresizingMaskIntoConstraints="NO" id="AyX-4E-4A5">
+                    <rect key="frame" x="0.0" y="0.0" width="146" height="123"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MenuReturnHomeButton" translatesAutoresizingMaskIntoConstraints="NO" id="Q6P-F4-U4y">
+                    <rect key="frame" x="33" y="0.0" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="OR8-9r-iON"/>
+                        <constraint firstAttribute="height" constant="80" id="qlZ-Lu-u72"/>
+                    </constraints>
+                </imageView>
+                <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mNE-4a-ai4">
+                    <rect key="frame" x="19" y="86" width="108" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="apo-Fx-scK">
+                            <rect key="frame" x="0.0" y="0.0" width="49" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wlw-sf-2vu">
+                            <rect key="frame" x="59" y="0.0" width="51" height="31"/>
+                        </switch>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="AyX-4E-4A5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ERh-Yq-OqD"/>
+                <constraint firstAttribute="bottom" secondItem="mNE-4a-ai4" secondAttribute="bottom" constant="6" id="Hme-nw-a8M"/>
+                <constraint firstItem="Q6P-F4-U4y" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OeD-eM-TVB"/>
+                <constraint firstItem="Q6P-F4-U4y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RS3-Pm-AtA"/>
+                <constraint firstItem="mNE-4a-ai4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TOp-Hx-6Jj"/>
+                <constraint firstAttribute="trailing" secondItem="AyX-4E-4A5" secondAttribute="trailing" id="Tg6-g3-3Yc"/>
+                <constraint firstItem="AyX-4E-4A5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="c1u-CO-NMX"/>
+                <constraint firstAttribute="bottom" secondItem="AyX-4E-4A5" secondAttribute="bottom" id="g3l-6P-ipY"/>
+                <constraint firstItem="mNE-4a-ai4" firstAttribute="width" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" constant="-5" id="qP8-a8-hSc"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="Q6P-F4-U4y" id="2vY-9z-BPI"/>
+                <outlet property="switchView" destination="Wlw-sf-2vu" id="Bff-jK-TlE"/>
+                <outlet property="textLabel" destination="apo-Fx-scK" id="Uv5-AT-Ign"/>
+            </connections>
+            <point key="canvasLocation" x="696" y="468.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="MenuIconBackground" width="146" height="125"/>
+        <image name="MenuReturnHomeButton" width="37" height="33"/>
+    </resources>
+</document>
